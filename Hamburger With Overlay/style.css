@@ -44,4 +44,35 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  /* the image is mostly covered by the blue color  */
+  z-index: -1;
+}
+.showcase .showcase-inner {
+  /*  use flexbox here  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.showcase h1 {
+  font-size: 4rem;
+}
+.showcase p {
+  /* 1 rem =  pixels of root htmel element default is 16 pixels*/
+  font-size: 1.3rem;
+}
+.btn {
+  /* using inline-block so that it works on links  */
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.btn:hover {
+  opacity: 0.7;
 }
