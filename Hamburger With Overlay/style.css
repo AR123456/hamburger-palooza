@@ -72,7 +72,29 @@ body {
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
   text-decoration: none;
+  /* adding transition to .btn:hover */
+  transition: opacity 1s ease-in;
 }
 .btn:hover {
   opacity: 0.7;
 }
+/* this could be in its own css file  */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  /* the toggler is the check box positioning over the top  of the menu using z-index to make sure it stays on top and making the check box larger so it covers giving it an opacity of 0 so it is not seen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+/* square with the lines inside of it */
