@@ -1,0 +1,2 @@
+This implementation of the hamburger menu uses SVG animation
+using css stroke-dasharray and stroke-dashoffset to make the animation
