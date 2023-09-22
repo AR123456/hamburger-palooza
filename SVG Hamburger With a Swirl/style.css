@@ -9,13 +9,13 @@ body {
   height: 100vh;
   overflow: hidden;
 } */
-body {
+/* body {
   align-items: center;
   display: flex;
   justify-content: center;
   height: 100vh;
   margin: 0;
-}
+} */
 .menu {
   background-color: transparent;
   border: none;
