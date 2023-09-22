@@ -7,93 +7,22 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>The anatomy of the Hamburger Menu</h1>
-    <p>
-      In its most simple incarnation, the Hamburger Menu comes as straight,
-      parallel lines. Usually, they’re three. These lines stay in some form of a
-      clickable container. Shapes and sizes of menus may vary, but their use is
-      the same. Clicking them toggles the hamburger’s state. This interaction
-      makes the menu go back and forth between its opened and closed state. The
-      conventional way to portray the opened state is by showing an X. It
-      signals to the user that tapping/clicking the button again closes the
-      menu. Ever so often, there’s an animation going between these two states.
-      Buttons like these are excellent opportunities for web developers to
-      delight their users. Generally speaking, it’s the perfect place to add an
-      animation. Animating the button’s state transition is not just pleasing to
-      the eye; it also serves a purpose. It’s a good UX to give users feedback
-      on touch and click interactions.
-    </p>
-
-    <svg
-      width="100"
-      height="100"
-      viewBox="0 0 25.128608 25.128608"
-      version="1.1"
-      id="svg5"
-      inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-      sodipodi:docname="hamburger.svg"
-      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:svg="http://www.w3.org/2000/svg"
+    <button
+      class="menu"
+      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+      aria-label="Main Menu"
     >
-      <sodipodi:namedview
-        id="namedview7"
-        pagecolor="#ffffff"
-        bordercolor="#000000"
-        borderopacity="0.25"
-        inkscape:showpageshadow="2"
-        inkscape:pageopacity="0.0"
-        inkscape:pagecheckerboard="0"
-        inkscape:deskcolor="#d1d1d1"
-        inkscape:document-units="px"
-        showgrid="false"
-        inkscape:zoom="2.587745"
-        inkscape:cx="132.1614"
-        inkscape:cy="126.75129"
-        inkscape:window-width="1450"
-        inkscape:window-height="1243"
-        inkscape:window-x="4494"
-        inkscape:window-y="71"
-        inkscape:window-maximized="0"
-        inkscape:current-layer="layer1"
-      />
-      <defs id="defs2" />
-      <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
-        <rect
-          style="fill: #000000; stroke-width: 0.251286"
-          id="rect111"
-          width="25.247612"
-          height="2.6218681"
-          x="-0.19421239"
-          y="5.5350528"
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <path
+          class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
         />
-        <rect
-          style="fill: #000000; stroke-width: 0.251286"
-          id="rect113"
-          width="25.150509"
-          height="2.6218677"
-          x="0.097106203"
-          y="11.74985"
+        <path class="line line2" d="M 20,50 H 80" />
+        <path
+          class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
         />
-        <rect
-          style="fill: #000000; stroke-width: 0.251286"
-          id="rect115"
-          width="25.247612"
-          height="2.4276545"
-          x="0.097106203"
-          y="17.576221"
-        />
-        <rect
-          style="fill: #000000; stroke-width: 0.251286"
-          id="rect117"
-          width="0.19421241"
-          height="0.87395579"
-          x="24.859188"
-          y="13.789081"
-        />
-      </g>
-    </svg>
-    <script src="app.js"></script>
+      </svg>
+    </button>
   </body>
 </html>
