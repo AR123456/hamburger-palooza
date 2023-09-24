@@ -97,4 +97,46 @@ body {
   height: 50px;
   opacity: 0;
 }
-/* square with the lines inside of it */
+/* square with the lines inside of it  positioning it over the toggler and  menu items in the top left area.  Using z index to control it when it is seen*/
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* lines inside of the hamburger get the middle line immediate div syntax of >div 
+this is creating a horizontal white line 
+*/
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* using before and after psudo selector to  make the top and bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  /* using before and after psudo selector to  make the top and bottom lines */
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  /* inherit the white from the div */
+  background: inherit;
+}
+.menu-wrap .hamburger > div:after {
+  /* getting all the stuff from above, so just move this one down 10px */
+  top: 10px;
+}
