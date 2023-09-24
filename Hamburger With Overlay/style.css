@@ -140,3 +140,9 @@ this is creating a horizontal white line
   /* getting all the stuff from above, so just move this one down 10px */
   top: 10px;
 }
+/* Toggle animation on click (checking the invisible check box) puts it into a checked state grabbing the toggler class to style  */
+/*  the + hamburger>div so that it is transformed, not the check box.   */
+.menu-wrap .toggler:checked + .hamburger > div {
+  /* make middle div invisible and rotate bottom 90 deg counter clockwise and top div  clockwise 90 deg  */
+  transform: rotate(135deg);
+}
