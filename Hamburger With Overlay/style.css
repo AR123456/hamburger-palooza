@@ -1,7 +1,7 @@
 /* setting variables on root */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
-  --overlay-color: rgba(24, 39, 51.85);
+  --overlay-color: rgba(24, 39, 51, 0.85);
   --menu-speed: 0.75s;
 }
 
@@ -10,6 +10,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -169,7 +171,7 @@ this is creating a horizontal white line
 }
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease 0.4s;
 }
 
 .menu-wrap .menu {
