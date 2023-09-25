@@ -1,7 +1,7 @@
 /* setting variables on root */
 :root {
-  --primary-color: rgba(13, 110, 139, 0.75);
-  --overlay-color: rgba(24, 39, 51, 0.85);
+  --primary-color: rgba(13, 110, 139, 0.05);
+  --overlay-color: rgba(24, 39, 51, 0.55);
   --menu-speed: 0.75s;
 }
 
@@ -32,7 +32,8 @@ body {
 }
 .showcase {
   background-color: var(--primary-color);
-  color: aliceblue;
+  /* text color of the main page  */
+  color: rgb(146, 45, 2);
   height: 100vh;
   /* relative so showcase can be absolute within it */
   position: relative;
@@ -70,7 +71,7 @@ body {
   display: inline-block;
   border: none;
   background: var(--primary-color);
-  color: white;
+  color: rgb(146, 45, 2);
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
   text-decoration: none;
@@ -120,7 +121,7 @@ this is creating a horizontal white line
   position: relative;
   width: 100%;
   height: 2px;
-  background: white;
+  background: rgb(55, 7, 80);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +218,7 @@ this is creating a horizontal white line
 /* style the list items  */
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: white;
+  color: rgb(55, 7, 80);
   font-size: 1.5rem;
   padding: 1rem;
 }
