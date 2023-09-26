@@ -30,10 +30,16 @@ body {
   overflow: hidden;
   padding: 0 3rem;
 }
+.showcase.checked {
+  color: rgba(146, 45, 2, 0.1);
+}
+
 .showcase {
   background-color: var(--primary-color);
+
   /* text color of the main page  */
   color: rgb(146, 45, 2);
+  /* backdrop-filter: brightness(150%); */
   height: 100vh;
   /* relative so showcase can be absolute within it */
   position: relative;
@@ -66,6 +72,7 @@ body {
   /* 1 rem =  pixels of root htmel element default is 16 pixels*/
   font-size: 1.3rem;
 }
+
 .btn {
   /* using inline-block so that it works on links  */
   display: inline-block;
@@ -158,6 +165,7 @@ this is creating a horizontal white line
   top: 0;
   transform: rotate(90deg);
 }
+
 /* when the check box is checked rotate the x a bit */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
