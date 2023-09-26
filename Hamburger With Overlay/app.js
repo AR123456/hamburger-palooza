@@ -15,3 +15,18 @@ toggler.addEventListener("change", function () {
     showcase.classList.remove("checked");
   }
 });
+// ////////////////////////////// another way to do the js////////////
+// // Get the checkbox element
+// const toggler = document.querySelector(".toggler");
+
+// // Get the container element
+// const showcase = document.querySelector(".showcase");
+
+// // Add an event listener to the checkbox
+// toggler.addEventListener("change", function () {
+//   if (this.checked) {
+//     showcase.style.color = "rgba(146, 45, 2, 0.1)";
+//   } else {
+//     showcase.style.color = "rgb(146, 45, 2)";
+//   }
+// });
